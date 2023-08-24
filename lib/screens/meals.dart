@@ -14,7 +14,7 @@ class MealsScreen extends StatelessWidget {
     Widget content =
         ListView.builder(itemCount: meals.length,itemBuilder: (ctx, index) => MealItem(meal: meals[index]));
     if (meals.isEmpty) {
-      content = Center(
+      content = Center( 
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [

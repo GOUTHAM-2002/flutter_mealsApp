@@ -8,7 +8,6 @@ import 'package:meals/widgets/category_grid_item.dart';
 class CategoriesScreen extends StatelessWidget {
   const CategoriesScreen({super.key, required this.availableMeals});
 
-  
   final List<Meal> availableMeals;
 
   void _selectCategory(BuildContext context, Category category) {
@@ -21,7 +20,6 @@ class CategoriesScreen extends StatelessWidget {
         builder: (ctx) => MealsScreen(
           title: category.title,
           meals: filteredMeals,
-        
         ),
       ),
     );
@@ -29,7 +27,7 @@ class CategoriesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return   Scaffold(
         appBar: AppBar(
           title: const Text("Categories"),
         ),
